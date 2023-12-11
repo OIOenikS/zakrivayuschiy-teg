@@ -51,7 +51,7 @@
   gap: 20px;
   justify-items: center;
   text-decoration: none;
-  margin-block-start: clamp(120px, var(--breakpoint-simulation) * 1000, 136px); /*пересчитать*/
+  margin-block-start: clamp(120px, var(--breakpoint-simulation) * 1000, 136px);
 }
 
 .header__title {
@@ -144,6 +144,8 @@
 
 .card__content-detales {
   position: relative;
+  inline-size: clamp(371px, 53.3vw, 696px);
+  block-size: clamp(371px, 53.3vw, 696px);
 }
 
 .card__content-label {
