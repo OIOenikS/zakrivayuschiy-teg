@@ -138,6 +138,7 @@
 
 .card__title {
   font-size: var(--font-size-main);
+  font-variation-settings: 'wgth' var(--wght-title);
   margin: 5px 10px;
 }
 
@@ -206,7 +207,7 @@
 }
 
 .card__content-image:hover.power {
-  filter: grayscale(0.8) contrast(130%);
+  filter: saturate(200%);
 }
 
 .card__content-image.accuracy {
@@ -214,7 +215,7 @@
 }
 
 .card__content-image:hover.accuracy {
-  filter: saturate(200%);
+  filter: grayscale(0.8);
 }
 
 .card__content-image.people {
@@ -284,7 +285,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 /***************************************************Код для блока - card - конец*****************************************/
