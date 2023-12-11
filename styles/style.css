@@ -15,6 +15,7 @@
 */
 
 .page {
+  inline-size: 100%;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
@@ -25,11 +26,10 @@
   background-attachment: fixed;
   background-color: var(--color-bg);
   font-variation-settings: 'wgth' var(--wght-main-text);
-  margin: 0 auto;
 }
 
 .page__block {
-  max-inline-size: var(--page__block-size);
+  max-inline-size: var(--page__inline-size);
   margin: 0 auto;
 }
 
@@ -144,8 +144,6 @@
 
 .card__content-detales {
   position: relative;
-  inline-size: clamp(371px, 53.3vw, 696px);
-  block-size: clamp(371px, 53.3vw, 696px);
 }
 
 .card__content-label {
@@ -172,13 +170,82 @@
 }
 
 .card__content-image {
+  display: block;
   border-block-start: 2px solid var(--color-accent);
   border-block-end: 2px solid var(--color-accent);
   inline-size: 100%;
-  block-size: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
 }
+
+/*************************************************Filter for img - начало***********************************/
+
+.card__content-image.target {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.target {
+  filter: hue-rotate(230deg);
+}
+
+.card__content-image.fear {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.fear {
+  filter: brightness(200%);
+}
+
+.card__content-image.power {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.power {
+  filter: hue-rotate(45deg);
+}
+
+.card__content-image.accuracy {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.accuracy {
+  filter: saturate(200%);
+}
+
+.card__content-image.people {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.people {
+  filter: contrast(130%);
+}
+
+.card__content-image.dont-worry {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.dont-worry {
+  filter: sepia(75%);
+}
+
+.card__content-image.concentration {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.concentration {
+  filter: invert(0.8);
+}
+
+.card__content-image.good-way {
+  transition: filter 0.3s ease;
+}
+
+.card__content-image:hover.good-way {
+  filter: contrast(130%) saturate(130%);
+}
+
+/*************************************************Filter for img - конец***********************************/
 
 .card__text {
   display: grid;

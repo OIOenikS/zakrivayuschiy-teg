@@ -6,7 +6,7 @@
   --font-size-interactive-element: 14px;
   --wght-title: 700;
   --wght-main-text: 400;
-  --page__block-size: clamp(375px, 48.6vw, 700px);
+  --page__inline-size: clamp(375px, 48.6vw, 700px);
   --breakpoint: 376px;
   --breakpoint-simulation: (100vw - var(--breakpoint));
   --bg-image: 
