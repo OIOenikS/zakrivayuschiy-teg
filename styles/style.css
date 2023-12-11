@@ -54,6 +54,10 @@
   margin-block-start: clamp(120px, var(--breakpoint-simulation) * 1000, 136px);
 }
 
+.header__logo:focus {
+  outline: none;
+}
+
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
