@@ -274,10 +274,10 @@
 .card__icon-button {
   inline-size: 42px;
   block-size: 38px;
-  border: none;
+  background-color: transparent;
   position: relative;
   border: 2px solid transparent;
-  transition: border 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus {
