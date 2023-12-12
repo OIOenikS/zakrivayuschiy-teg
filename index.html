@@ -540,14 +540,20 @@
       aria-controls="dialog-id"
       class="button main__button"
       >
-        <svg class="save-icon">
-          <use href="./svg/floppy.svg#floppy"></use>
+        <svg class="save-icon" 
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        >
+          <use href="./svg/floppy.svg#floppy">
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-id" class="dialog border-decor">
-        <svg class="dialog__icon save-icon">
-          <use href="./svg/floppy.svg#floppy"></use>
+        <svg class="dialog__icon save-icon" 
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        >
+          <use href="./svg/floppy.svg#floppy">
         </svg>
         <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
         <form class="dialog__form" method="dialog">
