@@ -24,7 +24,6 @@
   - картинки карточек стилизованы CSS-фильтрами.
 - Реализовано модальное окно на странице, с помощью элемента dialog.
 - Все интерактивные элементы имеют состояния hover и focus-visible.
-- Проект опубликован на GitHub Pages [ссылка](https://oioeniks.github.io/zakrivayuschiy-teg/).
 ---
 ## Стек
 HTML, CSS, JavaScript
